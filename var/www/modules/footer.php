@@ -30,7 +30,7 @@
 </ul>
 
 <!-- / #footerContents --></div>
-<div class="copyright">Copyright &copy; 2011 Interactive Multimedia Environment Lab. All Rights Reserved.</div>
+<div class="copyright">Copyright &copy; 2014 Interactive Multimedia Environment Lab. All Rights Reserved.</div>
 <!-- / #footer --></div>
 
 <!-- / #page --></div>

@@ -20,7 +20,7 @@
 <div id="headerDesc">
 <div id="headerDescArea">
 <h1>Interactive Multimedia Environment Lab.</h1>
-<h2>慶應義塾大学 湘南藤沢キャンパス ο館 203号室</h2>
+<h2>慶應義塾大学 湘南藤沢キャンパス ο館 201号室</h2>
 <!-- / #headerDescArea --></div>
 <!-- / #headerDesc --></div>
 
