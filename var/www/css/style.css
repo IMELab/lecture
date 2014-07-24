@@ -1,0 +1,504 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+
+ file name  :style.css
+ style info :コンテンツエリア関係 他
+ 
+このスタイルシートの構成
+ 基本設定、レイアウト、横幅設定など
+ 汎用class
+ #header
+  #utilityNav
+ #navi
+  #gNav
+ #footer
+  #footerContents
+ #page
+ #mainImg
+  #imgArea
+  #contents
+   #main
+   #sub
+=================================================================== */
+
+/*----------------------------------------------------
+	基本設定、リンクカラーなど
+----------------------------------------------------*/
+body {
+}
+
+a:link {
+	color:#50b2db;
+	text-decoration: none;
+}
+a:visited {
+	color:#50b2db;
+	text-decoration: none;
+}
+a:hover {
+	color:#70cbf1;
+	text-decoration: underline;
+}
+a:active {
+	color:#70cbf1;
+	text-decoration: none;
+}
+
+
+/*----------------------------------------------------
+	汎用class
+----------------------------------------------------*/
+.imgR {
+	float: right;
+	margin: 0 0 0 10px;
+}
+
+.imgL {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.btn {
+	text-align: center;
+}
+
+/* clearfix */
+.clearfix:after {
+	content: "."; display: block; visibility: hidden; height: 0.1px; font-size: 0.1em; line-height: 0; clear: both;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+
+/* margin
+----------------------------------------------------------*/
+/* Top */
+.MG-T0 { margin-top: 0 !important; }
+.MG-T5 { margin-top: 5px !important; }
+.MG-T10 { margin-top: 10px !important; }
+.MG-T15 { margin-top: 15px !important; }
+.MG-T20 { margin-top: 20px !important; }
+.MG-T25 { margin-top: 25px !important; }
+.MG-T30 { margin-top: 30px !important; }
+/* Bottom */
+.MG-B0 { margin-bottom: 0 !important; }
+.MG-B5 { margin-bottom: 5px !important; }
+.MG-B10 { margin-bottom: 15px !important; }
+.MG-B15 { margin-bottom: 15px !important; }
+.MG-B20 { margin-bottom: 20px !important; }
+.MG-B25 { margin-bottom: 25px !important; }
+.MG-B30 { margin-bottom: 30px !important; }
+
+/* padding
+----------------------------------------------------------*/
+/* Left */
+.PD-L5 { padding-left: 5px !important; }
+.PD-L10 { padding-left: 10px !important; }
+.PD-L15 { padding-left: 15px !important; }
+.PD-L20 { padding-left: 20px !important; }
+.PD-L25 { padding-left: 25px !important; }
+.PD-L30 { padding-left: 30px !important; }
+/* Right */
+.PD-R5 { padding-right: 5px !important; }
+.PD-R10 { padding-right: 10px !important; }
+.PD-R15 { padding-right: 15px !important; }
+.PD-R20 { padding-right: 20px !important; }
+.PD-R25 { padding-right: 25px !important; }
+.PD-R30 { padding-right: 30px !important; }
+
+/* フォントサイズ・カラー
+----------------------------------------------------------*/
+.TXT-S { font-size:12px;}
+.TXT-M { font-size:14px;}
+.TXT-L { font-size:16px;}
+
+.TXT-RED { color:#FF3333;}
+.TXT-ORG { color:#f7931e;}
+
+
+/* -----------------------------------------------------------
+	#header
+		ヘッダー
+----------------------------------------------------------- */
+#header {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#header #logo {
+	clear: both;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	height: 50px;
+	width: 160px;
+	background: #fff;
+	margin: 20px 0;
+}
+#headerDesc {
+	color: #fff;
+	background: #50b2db;
+	height: 20px;
+}
+#headerDescArea {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#headerDescArea h1 {
+	font-size: 10px;
+	font-weight: normal;
+	float: left;
+	margin: 2px 0 0 10px;
+	height: 20px;
+}
+#headerDescArea h2 {
+	font-size: 10px;
+	font-weight: normal;
+	float: right;
+	margin: 2px 10px 0 0;
+	height: 20px;
+}
+
+
+/* #utilityNav
+----------------------------------------------------------- */
+#header #utilityNav {
+	float: right;
+	text-align: right;
+	padding-top: 60px;
+}
+
+#header #utilityNav li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 5px;
+	padding:0 0 5px 8px;
+	background: url(../img/list-arw.png) no-repeat;
+	background-position:0% 30%;
+}
+
+
+/* -----------------------------------------------------------
+	#navi
+		ナビ
+----------------------------------------------------------- */
+#navi {
+	clear: both;
+	height: 60px;
+}
+
+/* #gNav
+----------------------------------------------------------- */
+#navi #gNav {
+	clear: both;
+	overflow: hidden;
+}
+
+* html #navi #gNav {
+	height: 1%;
+}
+
+#naviArea {
+	width: 960px;
+	margin: 0 auto;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #ddd;
+}
+
+#navi #gNav li {
+	float: left;
+	text-align: center;
+}
+
+#navi #gNav li a:link,
+#navi #gNav li a:visited,
+#navi #gNav li a:active {
+	color:#333;
+	font-size: 12px;
+	text-decoration:none;
+	display:block;
+	width: 159px;
+	height: 50px;
+	padding-top: 10px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #ddd;
+}
+
+#navi #gNav span {
+	color:#50b2db;
+	font-size: 10px;
+}
+
+#navi #gNav li a:hover{
+	color:#989898;
+	background-position:0 -60px;
+	text-decoration:none;
+}
+
+/* -----------------------------------------------------------
+	#footer
+		フッター
+----------------------------------------------------------- */
+#footer {
+	clear: both;
+	background: #ededed;
+	padding: 15px 0 0 0;
+}
+
+#footer .copyright {
+	color: #fff;
+	background: #666;
+	text-align: center;
+	margin-top: 20px;
+	padding: 15px 0 0 0;
+	height: 30px;
+}
+
+#footerContents ul {
+	text-align: center;
+	padding: 10px 0 0 0;
+}
+
+#footerContents ul li {
+	display: inline;
+	border-right: solid 1px #999;
+	padding: 0 10px 0 10px;
+}
+#footerContents ul li.end {
+	display: inline;
+	border: none;
+	padding: 0 10px 0 10px;
+}
+
+#footerContents .box {
+	width: 280px;
+	float: left;
+	border: none;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+#footerContents h3 {
+	font-weight: normal;
+}
+
+/* -----------------------------------------------------------
+	#footerContents
+		フッターコンテンツ
+----------------------------------------------------------- */
+#footerContents {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+/*----------------------------------------------------
+	#page
+----------------------------------------------------*/
+#page {
+}
+
+
+/*----------------------------------------------------
+	#mainImg
+----------------------------------------------------*/
+#mainImg {
+	background: #fff url(../img/mainImg_bg.png);
+	height: 300px;
+}
+#imgArea {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*----------------------------------------------------
+	#contents
+----------------------------------------------------*/
+#contents {
+	width: 960px;
+	margin: 20px auto 0 auto;
+	padding-bottom: 60px;
+	text-align: left;
+}
+
+#contents .pageTop {
+	clear: both;
+	text-align: right;
+}
+
+
+/*.contentsBox
+----------------------------------------------------*/
+.contentsBox {
+	margin: 0 0 20px 15px;
+	min-height:1px;
+}
+
+.contentsBox .box {
+	font-size: 12px;
+	width: 280px;
+	float: left;
+	border: solid #CCC 1px;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+
+/*----------------------------------------------------
+	#main
+		メイン
+----------------------------------------------------*/
+#main {
+	float: right;
+	width: 700px;
+}
+
+#main h2{
+	font-size: 16px;
+	font-weight: normal;
+	width: 700px;
+	height: 40px;
+	background: url(../img/bg-h2.png) no-repeat;
+	padding: 8px 0 0 32px;
+}
+
+#main h3{
+	font-size: 16px;
+	font-weight: normal;
+	width: 700px;
+	height: 30px;
+	background: url(../img/bg-h3.png) no-repeat;
+	padding: 9px 0 0 32px;
+}
+
+#main h4{
+	color: #50b2db;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0 0 10px 0;
+}
+
+#main .section{
+	margin: 0 0 20px 0;
+	padding: 10px 5px;
+}
+
+#main .sectionBorder{
+	margin: 0 0 20px 0;
+	padding: 20px 20px;
+	border: solid #ccc 1px;
+	min-height:1px;
+}
+
+#main .box {
+	width: 190px;
+	float: left;
+	border-right: solid #CCC 1px;
+	margin-right: 5px;
+	padding: 0 15px 0 10px;
+}
+
+#main .box-end {
+	width: 190px;
+	float: left;
+	margin-right: 5px;
+	padding: 0 0 0 10px;
+}
+
+#main ul li{
+	list-style-type: none;
+	padding: 0 0 5px 8px;
+	background: url(../img/list-arw.png) no-repeat;
+	background-position:0% 30%;
+}
+
+/* テーブル装飾
+----------------------------------------------------------- */
+#main .t-head {
+	border-collapse: collapse;
+	border: solid 1px #ddd;
+	padding: 10px;
+	background-color: #efefef;
+	width: 80px;
+}
+
+#main .t-item {
+	border-collapse: collapse;
+	border: solid 1px #ddd;
+	padding: 10px;
+	width: 535px;
+}
+
+
+/* -----------------------------------------------------------
+	#sub
+		サイドバー、サブ
+----------------------------------------------------------- */
+#sub {
+	float: left;
+	width: 230px;
+}
+
+#sub h3{
+	font-size: 14px;
+	font-weight: normal;
+	width: 230px;
+	height: 35px;
+	background: url(../img/bg-side-h3.png) no-repeat;
+	margin:0;
+	padding: 9px 0 0 32px;
+}
+
+#sub ul {
+	margin: -10px 0 2px;
+}
+
+#sub ul li{
+	list-style-type: none;
+	padding: 5px 0 5px 8px;
+	background: url(../img/list-arw.png) no-repeat;
+	background-position:0% 49%;
+	border-bottom: dashed #ccc 1px;
+	margin: 5px 0 5px;
+}
+
+#sub .sectionBorder{
+	font-size: 12px;
+	margin: -5px 0 20px 0;
+	padding: 10px 10px 10px 10px;
+	border: solid #ccc 1px;
+}
+
+#sub .box {
+	border-bottom: solid #CCC 1px;
+	padding: 5px;
+}
+
+#sub .box-end {
+	padding: 5px;
+}
+
+/* 独自定義 */
+
+ol {
+    margin: 20px;
+}
+
+#pickupBox h3 {
+    background-color: #CA4343;
+    color: #FFF;
+    padding: 8px;
+}
+#pickupBox p {
+    font-weight: bold;
+    line-height: 2;
+    border: 3px solid #CA4343;
+    margin-bottom: 10px;
+    padding: 5px;
+}

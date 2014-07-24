@@ -1,0 +1,81 @@
+body {
+    font-family:"MS UI Gothic","MS PGothic","Osaka";
+    text-align: center;
+    line-height: 150%;
+    font-size: 13px;
+    color: #333333;
+    margin:0px 0px 0px 0px;
+}
+
+#head {
+    width:80%;
+    text-align: left;
+    margin:0 auto 10px auto;
+    background:#EFEFEF;
+    border-color:#CCCCCC;
+    border-width:0 1px 1px 1px;
+    border-style:solid;
+}
+
+#head h1 {
+    padding:30px;
+    margin:0px;
+    font-size:20px;
+    color:#0518A4;
+    font-family: "Osaka","Verdana","Arial","Helvetica","sans-serif";
+}
+
+#main {
+    width:80%;
+    text-align: left;
+    padding: 15px 0px;
+    margin:1px auto 1px auto;
+}
+
+#foot {
+    width:80%;
+    text-align: center;
+    font-size:10px;
+    padding: 10px;
+    height:16px;
+    margin:0 auto 0 auto;
+    background:#EFEFEF;
+    border-color:#CCCCCC;
+    border-width:1px 0px 0px 0px;
+    border-style:solid;
+    font-family: "Osaka","Verdana","Arial","Helvetica","Sans-Serif";
+}
+
+#right h2 {
+    color:#0518A4;
+    font-size:14px;
+    padding:5px 8px;
+    border-left: #0518A4 2px solid;
+    margin: 0px 0px 5px 2px;
+    background:#EFEFEF;
+}
+
+#right h3 {
+    font-size:13px;
+}
+
+.title {
+    padding:00;
+    border-left: #0518A4 3px solid;
+}
+
+.tex {
+    line-height:170%;
+    padding:6px 3px 15px 20px;
+}
+
+.caption {
+    font-size: 16px;
+    font-style: bold;
+    text-align: center;
+}
+
+li.header {
+    font-size: 14px;
+    font-weight: bold;
+}
